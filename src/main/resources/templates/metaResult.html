@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+<title>File Meta Result</title>
+</head>
+<body>
+	<div>
+
+		<h2>File Meta Result</h2>
+		<div>
+			<form class="form-horizontal">
+				<div>
+					<label class="col-sm-2 control-label">Is File Valid ?:</label>
+					<p class="form-control-static" th:text="${meta.isValid == ''} ? 'Not Valid' : ${meta.isValid}">Is
+						File Valid?</p>
+				</div>
+
+				<div>
+					<label class="col-sm-2 control-label">Process Duration (Second):</label>
+					<p class="form-control-static" th:text="${meta.processDuration}">Process
+						Duration</p>
+				</div>
+
+				<div>
+					<label class="col-sm-2 control-label">Valid Imported Deals:</label>
+					<p class="form-control-static"
+						th:text="${meta.validImportedRecords}">Valid Imported Deals</p>
+				</div>
+
+				<div>
+					<label class="col-sm-2 control-label">Invalid Deals:</label>
+					<p class="form-control-static"
+						th:text="${meta.invalidImportedRecords}">Invalid Deals</p>
+				</div>
+
+
+
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

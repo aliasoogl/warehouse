@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+<title>Analyze Uploaded Document</title>
+
+</head>
+<body>
+	<div>
+		<h2>Submit File name for Details</h2>
+		<div>
+			<form class="form-horizontal" th:action="@{/analyze}" method="post">
+				<label class="col-sm-2 control-label">File Name</label> <input
+					name="fileName" type="text" class="form-control" />
+				<div class="row">
+					<button type="submit" class="btn btn-default">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
